@@ -50,9 +50,11 @@ public class ArrayListExample {
 		System.out.println("Letters list contains Z ? "+letters.contains("Z"));
 		//index of
 		System.out.println(letters.indexOf("D")); 
+		
 		//ensureCapacity example, it's ArrayList method, so object should be defined like below.
 		ArrayList<String> tempList = new ArrayList<>();
 		tempList.ensureCapacity(1000);
+		System.out.println("letters ArrayList size = "+tempList.size());
 		
 		//get example
 		String e = letters.get(4);
@@ -81,6 +83,7 @@ public class ArrayListExample {
 		
 		//retainAll example
 		list.clear();list.add("A");list.add("B");list.add("C");
+		System.out.println(list);
 		letters.retainAll(list);
 		System.out.println("letters elements after retainAll operation: "+letters);
 		
